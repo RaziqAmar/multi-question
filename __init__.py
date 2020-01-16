@@ -41,7 +41,7 @@ class Partialsolve(db.Model):
         return '<solve {}, {}, {}, {}>'.format(self.teamid, self.chalid, self.ip, self.flags)    
     
 
-class MultiQuestionChallenge(Challenges.CTFdStandardChallenge):
+class MultiQuestionChallenge(challenges.CTFdStandardChallenge):
     id = "multiquestionchallenge"
     name = "multiquestionchallenge"
 
